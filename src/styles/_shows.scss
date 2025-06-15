@@ -20,6 +20,9 @@
 
         &__item {
             img {
+                
+                height: 176px;
+                object-fit: contain;
                 max-width: 100%;
                 border-radius: 4px;
             }
