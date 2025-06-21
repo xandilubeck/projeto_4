@@ -28,7 +28,8 @@
   }
 }
 .hero__content {
-  max-width: 640px;
+  margin-top: 24px;
+  display: table;
 }
 @media (max-width: 768px) {
   .hero__content .title__hero {

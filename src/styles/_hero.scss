@@ -29,13 +29,14 @@
     }
 
     &__content {
+        margin-top: 24px;
+        display: table;
+        
         @media (max-width: 768px) {
             .title__hero {
                 margin-top: 50px;
             }
         }
-
-        max-width: 640px;
 
         .title--small {
             margin-bottom: 64px;
