@@ -10,8 +10,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+        }
         @media (max-width: 768px) {
             grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
         }
 
         &--is-active {
@@ -20,11 +26,15 @@
 
         &__item {
             img {
-                
-                height: 176px;
                 object-fit: contain;
-                max-width: 100%;
+                width: 410px;
+                height: 179px;
                 border-radius: 4px;
+
+                @media (max-width: 768px) {
+                    width: 329px;
+                    height: 179px;
+                }
             }
         }
     }
@@ -36,7 +46,7 @@
         @media (max-width: 768px) {
             white-space: nowrap;
             overflow-x: scroll;
-            padding-left: 20px;
+            
         }
 
         &__button {
